@@ -1,0 +1,56 @@
+/* for general */
+*{
+    margin: 0;          /* set margin 0 for self margin set  */  
+    font-family: Arial; /* set font Arial (big website makes own font */
+    border: border-box; /* CSS property that includes the element's padding and border within its specified width and height. */
+}
+
+/* for navbar (inspect & include in it)*/
+.navbar{
+    height: 60px;
+    background-color: #0f1111;
+    color: white;
+    display:flex             /* dispaly all navbar element in one direction */
+    /* justify-content: center; Horizontally center karne ke liye */
+    /* align-items center;     Vertically center karne ke liye  */
+    /* width: 100%; Puri screen ki width le le */
+}
+
+/* create nav-logo properties */
+.nav-logo{
+    height: 20px;
+    width: 70px;
+}
+
+/* inside div(nav-logo) define logo properties */
+.logo{
+    background-image: url("amazon-logo.png");
+    background-size: cover;
+    height: 20px;
+    width: 70px;
+}
+
+/* add border to nav-logo(for transparent border) */
+.border{
+    border: 1.5px solid transparent;
+}
+
+/* when hover seen tarnsparent border  */
+.border:hover{border:1.5px solid white}
+
+/* for navbar address */
+.add1{color: #cccccc;
+    font-size: 0.85rem;
+    margin-left: 23px;
+
+}
+
+.add2{
+    font-size: 1rem;
+    margin-left: 3px;
+}
+
+.add-icon{
+    display: flex;
+    align-items: center;
+}
