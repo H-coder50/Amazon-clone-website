@@ -10,13 +10,12 @@
     height: 60px;
     background-color: #0f1111;
     color: white;
-    display:flex             /* dispaly all navbar element in one direction */
-    /* justify-content: center; Horizontally center karne ke liye */
-    /* align-items center;     Vertically center karne ke liye  */
-    /* width: 100%; Puri screen ki width le le */
+    display:flex;            /* dispaly all navbar element in one direction */
+    align-items:center
+    
 }
 
-/* create nav-logo properties */
+/* 1-create nav-logo properties */
 .nav-logo{
     height: 20px;
     width: 70px;
@@ -34,11 +33,10 @@
 .border{
     border: 1.5px solid transparent;
 }
-
 /* when hover seen tarnsparent border  */
 .border:hover{border:1.5px solid white}
 
-/* for navbar address */
+/* 2-for navbar address */
 .add1{color: #cccccc;
     font-size: 0.85rem;
     margin-left: 23px;
@@ -53,4 +51,41 @@
 .add-icon{
     display: flex;
     align-items: center;
+}
+
+/* 3-nav-search style */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(232, 208, 47);
+    width: 620px;
+    height: 40px;
+    border-radius: 4px;  /* for curve border box */
+}
+/* for search-select */
+.search-select{
+    background-color: #f3f3f3
+    width 50px;
+    text-align: center;
+    border-top-left-radius: 4px;  /* for curve border box (All) */
+    border-bottom-left-radius: 4px;
+    border: none;
+}
+/* for search-input */
+.search-input{
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+}
+/* for search-icon */
+.search-icon{
+    width: 45px;
+    display: flex;
+    justify-content: center;  /* horizantally center*/
+    align-items: center;      /* vertically center*/
+    font-size: 1.2rem;
+    background-color: #febd68;
+    border-top-right-radius: 4px;  /* for curve border box (All) */
+    border-bottom-right-radius: 4px;
+
 }
