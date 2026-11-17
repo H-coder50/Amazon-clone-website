@@ -2,7 +2,7 @@
 *{
     margin: 0;          /* set margin 0 for self margin set  */  
     font-family: Arial; /* set font Arial (big website makes own font */
-    border: border-box; /* CSS property that includes the element's padding and border within its specified width and height. */
+    box-sizing: border-box; /* CORRECTED: includes padding/border in width/height */
 }
 
 /* for navbar (inspect & include in it)*/
@@ -10,10 +10,10 @@
     height: 60px;
     background-color: #0f1111;
     color: white;
-    display:flex;            /* dispaly all navbar element in one direction */
-    align-items:center
-    justify-content space-evenly; /* Distributes items with equal space */
-    
+    display: flex;            /* display all navbar element in one direction */
+    align-items: center;      /* CORRECTED: added semicolon */
+    justify-content: space-evenly; /* CORRECTED: added colon & semicolon */
+    padding: 0 10px;
 }
 
 /* 1-create nav-logo properties */
@@ -34,14 +34,14 @@
 .border{
     border: 1.5px solid transparent;
 }
-/* when hover seen tarnsparent border  */
+/* when hover seen transparent border  */
 .border:hover{border:1.5px solid white}
 
 /* 2-for navbar address */
-.add1{color: #cccccc;
+.add1{
+    color: #cccccc;
     font-size: 0.85rem;
     margin-left: 23px;
-
 }
 
 .add2{
@@ -59,42 +59,105 @@
     display: flex;
     justify-content: space-evenly;
     background-color: rgb(232, 208, 47);
-    width: 620px;
+    
+    /* UPDATED: Allows search bar to scale nicely and prevents squishing */
+    flex-grow: 1;
+    max-width: 620px;
+    min-width: 150px;
+    margin: 0 10px;
+    
     height: 40px;
     border-radius: 4px;  /* for curve border box */
 }
+
 /* for search-select */
 .search-select{
-    background-color: #f3f3f3
-    width 50px;
+    background-color: #f3f3f3; /* CORRECTED: added semicolon */
+    width: 50px;               /* CORRECTED: added colon */
     text-align: center;
     border-top-left-radius: 4px;  /* for curve border box (All) */
     border-bottom-left-radius: 4px;
     border: none;
 }
+
 /* for search-input */
 .search-input{
     width: 100%;
     font-size: 1rem;
     border: none;
+    padding-left: 8px;
 }
+
 /* for search-icon */
 .search-icon{
     width: 45px;
     display: flex;
-    justify-content: center;  /* horizantally center*/
+    justify-content: center;  /* horizontally center*/
     align-items: center;      /* vertically center*/
     font-size: 1.2rem;
     background-color: #febd68;
-    border-top-right-radius: 4px;  /* for curve border box (All) */
+    border-top-right-radius: 4px;  
     border-bottom-right-radius: 4px;
     color: #0f1111;
 }
-/* for sign-in */
+
+/* when hover on nav-search, orange boundary will appear */
+.nav-search:hover { 
+    border: 2px solid orange;
+}
+
+/* 4-for sign-in */
 span{
     font-size: 0.7rem;
 }
 .nav-second{
     font-size: 0.85rem;
+    font-weight: 700;
+}
+
+/* 6-for nav-cart icon */
+.nav-cart i{
+    font-size: 30px;
+}
+
+/* for nav-cart font */
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+/* 7- Panel */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;       /* FIXED: Added missing colon */
+    align-items: center;
+    color: white;        /* FIXED: Added missing colon */
+    align-items: center;   /* align vertically */
+    justify-content: space-evenly; /* align horizontally */
+}
+
+/* for display in line panel-ops all p */
+.panel-ops {
+    display: flex;
+    flex-direction: row; /* Forces children to align horizontally */
+    align-items: center; /* Vertically centers them */
+    gap: 15px;           /* Adds clean, even spacing between the items */
+    width: 70%;
+    font-size: 0.85rem;
+}
+
+/* Optional: Make sure paragraph tags or links inside panel-ops inherit white color */
+.panel-ops p, 
+.panel-ops a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;     /* for space in panel-ops p elements */
+}
+/* for pane-deals */
+.panel-deals{
+    font-size: 0.9rem;
     font-weight: 700;
 }
