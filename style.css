@@ -161,3 +161,32 @@ span{
     font-size: 0.9rem;
     font-weight: 700;
 }
+
+/* 8-for hero section */
+.hero-section{
+    background-image: url("hero_image.jpg");
+    background-size:cover;
+    height: 380px;
+    /* for setting hero msg position in bottom */
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+/* for style hero msg */
+.hero-msg{
+    background-color: white;
+    color: black;
+    height: 40px;
+    display: flex;
+    align-items: center;        /* for vertically center*/
+    justify-content: center;    /* for horizantally center*/
+    font-size: 0.85rem;
+    width: 80%;
+    margin-bottom: 25px;
+
+
+}
+/* for style anchor tag(a) in hero msg */
+.hero-msg a{
+    color: #007185;
+}
