@@ -166,7 +166,7 @@ span{
 .hero-section{
     background-image: url("hero_image.jpg");
     background-size:cover;
-    height: 380px;
+    height: 330px;
     /* for setting hero msg position in bottom */
     display: flex;
     justify-content: center;
@@ -176,17 +176,37 @@ span{
 .hero-msg{
     background-color: white;
     color: black;
-    height: 40px;
+    height: 30px;
     display: flex;
     align-items: center;        /* for vertically center*/
     justify-content: center;    /* for horizantally center*/
     font-size: 0.85rem;
     width: 80%;
-    margin-bottom: 25px;
-
-
+    margin-bottom: 20px;
 }
 /* for style anchor tag(a) in hero msg */
 .hero-msg a{
     color: #007185;
+}
+
+/* for Shop-section(mini boxes for shop) */
+/* for container shop-section (4 boxes in one line) */
+.shop-section{
+    display: flex; 
+    justify-content: space-evenly; /* for mini space between all box */
+    background-color: #e2e7e6;
+}
+/* for all class box */
+.box{
+    height: 400px;
+    border: 1px solid black;
+    width: 24%;   /* 25% for 1 box (all 4 box fix) */
+    background-color: white;
+    padding: 20px 0px 15px;     /* space around box */    
+}
+/* box1 img style */
+.box1-img{
+    background-image: url("images\ \(2\).jpeg");
+    background-size: cover;
+    height: 300px;
 }
