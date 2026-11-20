@@ -237,3 +237,74 @@ span{
 .box-content a:hover{
     color: #c7511f;
 }
+
+/* Footer */
+footer{
+    margin-top: 15px;     /* footer space from top */  
+}
+/* foot=panel1 style */
+.foot-panel1{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+}
+
+/* foot=panel2 style */
+/* foot=panel2 is parent container */
+/* when need element in single row (display flex parent container)*/
+.foot-panel2{
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+/* for ul (a) */
+ul a{
+    display: block;  /* align vertically in line*/
+    font-size: 0.85rem;
+    margin-top: 10px;
+    color: #dddddd;
+}
+/* for ul */
+ul{
+    margin-top: 40px;
+}
+
+/* foot-panel3 style */
+.foot-panel3{
+    background-color: #222f3d;
+    color: white;
+    border-top: 0.4px solid white;  /* border from top */
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo{
+    background-image: url("amazon-logo.png");
+    background-size: cover;
+    height: 20px;
+    width: 70px;
+}
+
+/* foot-panel4 style */
+.foot-panel4{
+    background-color: #0f1111;
+    color: white;
+    height: 80px;
+    font-size: 0.7rem;
+    text-align: center;
+}
+
+.pages{
+    padding-top: 25px;
+}
+.copyright{
+    padding-top: 5px;
+}
